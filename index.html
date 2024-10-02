@@ -61,7 +61,7 @@
       <!-- ==== / mouse cursor drag end ==== -->
       <!-- ==== header start ==== -->
       <header class="header">
-        <div class="primary-navbar secondary--navbar">
+        <div class="primary-navbar cmn-nav">
           <div class="container">
             <div class="row">
               <div class="col-12">
@@ -70,9 +70,10 @@
                     <style>
                       /* Style par défaut pour l'image */
                       .responsive-image {
-                        width: 70%; /* Taille par défaut sur les écrans de bureau */
+                        width: 50%; /* Taille par défaut sur les écrans de bureau */
                         height: auto;
                       }
+
                       /* Media query pour les téléphones (largeur max 768px) */
                       @media only screen and (max-width: 768px) {
                         .responsive-image {
@@ -88,17 +89,93 @@
                       />
                     </a>
                   </div>
+                  <div class="navbar__menu">
+                    <ul>
+                      <li class="navbar__item nav-fade">
+                        <a href="index.html">Accueil</a>
+                      </li>
+                      <li class="navbar__item nav-fade">
+                        <a href="projets.html">NOS PROJETS</a>
+                      </li>
+                      <li class="navbar__item nav-fade">
+                        <a href="services.html">NOS SERVICES</a>
+                      </li>
+                      <li class="navbar__item nav-fade">
+                        <a href="about-us.html">À Propos de nous</a>
+                      </li>
+                    </ul>
+                  </div>
                   <div class="navbar__options">
+                    <div class="navbar__mobile-options d-none d-sm-flex">
+                      <a
+                        href="contact.html"
+                        class="btn btn--secondary"
+                        style="
+                          padding: 8px 16px;
+                          border: 1px solid var(--white);
+                        "
+                        >Contacter-nous !</a
+                      >
+                    </div>
                     <button
-                      class="open-offcanvas-nav d-flex"
+                      class="open-mobile-menu d-flex d-xl-none"
                       aria-label="toggle mobile menu"
-                      title="Ouvrir le menu"
-                    ></button>
+                    >
+                      <i class="fa-light fa-bars-staggered"></i>
+                    </button>
                   </div>
                 </nav>
               </div>
             </div>
           </div>
+          <!-- ==== mobile menu start ==== -->
+          <div class="mobile-menu">
+            <nav class="mobile-menu__wrapper">
+              <div class="mobile-menu__header nav-fade">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/logo.png" alt="" title="" />
+                  </a>
+                </div>
+                <a
+                  href="javascript:void(0)"
+                  aria-label="close mobile menu"
+                  class="close-mobile-menu"
+                >
+                  <i class="fa-light fa-xmark-large"></i>
+                </a>
+              </div>
+              <div class="mobile-menu__list"></div>
+              <div
+                class="mobile-menu__options d-flex d-sm-none justify-content-center nav-fade"
+              ></div>
+              <div class="mobile-menu__social social nav-fade">
+                <a
+                  href="https://www.instagram.com/813_production/"
+                  target="_blank"
+                  aria-label="Notre instagram"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/104762499/"
+                  target="_blank"
+                  aria-label="Notre linkedin"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@813_production"
+                  target="_blank"
+                  aria-label="Notre YouTube"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="mobile-menu__backdrop"></div>
+          <!-- ==== / mobile menu end ==== -->
         </div>
       </header>
       <!-- ==== / header end ==== -->
@@ -244,14 +321,17 @@
                   }
                 </style>
                 <video autoplay muted loop playsinline>
-                  <source src="assets/background-video.MP4" type="video/mp4" />
+                  <source
+                    src="./assets/background-video.mp4"
+                    type="video/mp4"
+                  />
                   Ton navigateur ne supporte pas la vidéo en arrière-plan.
                 </video>
               </div>
               <!--
 										<img src="assets/images/banner/banner-one-thumb.png" alt="Background Video"
 											class="banner-one-thumb d-none d-sm-block g-ban-one">-->
-              <img src="assets/images/star.png" alt="Image" class="star" />
+              <!-- <img src="assets/images/star.png" alt="Image" class="star" /> -->
               <div class="banner-left-text banner-social-text d-none d-md-flex">
                 <a href="mailto:contact@813production.com"
                   >mail : contact@813production.com</a
@@ -436,9 +516,7 @@
               <div class="container-fluid">
                 <div class="row gaper">
                   <div class="col-12 col-sm-6 col-xl-3">
-                    <div
-                      class="portfolio__single portfolio__single-active topy-tilt fade-top"
-                    >
+                    <div class="portfolio__single topy-tilt fade-top">
                       <a
                         href="https://youtu.be/SK3d4kOqOlw?si=tL0VtoSV2XVpolhb"
                         target="_blank"
@@ -609,7 +687,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-sm-6 col-xl-3">
+                  <div class="col-12 col-sm-6 col-xl-3 mobile-hidden">
                     <div class="portfolio__single topy-tilt fade-top">
                       <a href="https://youtu.be/G5gaWqo6T9U" target="_blank">
                         <img src="assets/images/lautreamont.jpg" alt="Image" />

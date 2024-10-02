@@ -57,6 +57,11 @@
                      <nav class="navbar p-0">
                         <div class="navbar__logo">
                            <style>
+                              .navbar-active {
+                        background: none;
+                        border: none;
+                        box-shadow: none;
+                      }
                               /* Style par défaut pour l'image */
                               .responsive-image {
                                   width: 50%; /* Taille par défaut sur les écrans de bureau */
@@ -80,16 +85,22 @@
                                  <a href="index.html">Accueil</a>
                               </li>
                               <li class="navbar__item nav-fade">
-                                 <a href="projets.html">Projets</a>
+                                 <a href="projets.html">Nos Projets</a>
                               </li>
                               <li class="navbar__item nav-fade">
                                  <a href="services.html">Nos services</a>
+                              </li>
+                              <li class="navbar__item nav-fade">
+                                 <a href="about-us.html">à propos de nous</a>
                               </li>
                            </ul>
                         </div>
                         <div class="navbar__options">
                            <div class="navbar__mobile-options d-none d-sm-flex">
-                              <a href="contact.html" class="btn btn--secondary">Contacter-nous !</a>
+                              <a href="contact.html" class="btn btn--secondary" style="
+                              padding: 8px 16px;
+                              border: 1px solid var(--white);
+                            ">Contacter-nous !</a>
                            </div>
                            <button class="open-mobile-menu d-flex d-xl-none" aria-label="toggle mobile menu">
                               <i class="fa-light fa-bars-staggered"></i>
