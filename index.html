@@ -256,6 +256,65 @@
           <!-- ==== main start ==== -->
           <main>
             <!-- ==== banner start ==== -->
+            <div class="banner__scroller">
+              <style>
+                .banner__scroller{
+                  z-index: 9999;
+                  position: absolute;
+                  top: 85svh;
+                  left: 50%;
+                  translate: -50%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 16px;
+                }
+                .banner__scroller>span{
+                  text-transform: uppercase;
+                  font-weight: 700;
+                }
+                .banner__scroller .chevrons{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 12px;
+                }
+                .banner__scroller .chevron{
+                  display: flex;
+                  animation-name: animScroller;
+                  animation-duration: 0.8s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                }
+                
+                .banner__scroller .chevron span{
+                  display: block;
+                  background: var(--white);
+                  width: 18px;
+                  height: 4px;
+                }
+                .banner__scroller .chevron span:nth-child(1){
+                  rotate: 45deg;
+                  translate: 4px;
+                }
+                .banner__scroller .chevron span:nth-child(2){
+                  rotate: -45deg;
+                  translate: -3px;
+                }
+                @keyframes animScroller {
+                  0%, 100%{
+                    translate: 0 0;
+                  }
+                  50%{
+                    translate: 0 5px;
+                  }
+                }
+              </style>
+              <span>Scroll</span>
+              <div class="chevrons">
+                <div class="chevron"><span></span><span></span></div>
+                <div class="chevron"><span></span><span></span></div>
+              </div>
+            </div>
             <section class="banner" style="min-height: 100svh">
               <div class="container">
                 <div class="row">

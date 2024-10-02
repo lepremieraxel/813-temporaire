@@ -5428,6 +5428,9 @@ i {
 }
 .contact-m .contact-main__form .form-cta {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .contact-m .contact-main__form .form-cta .btn {
   border: 1px solid #414141;
