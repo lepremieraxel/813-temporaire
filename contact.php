@@ -376,42 +376,6 @@
                     </form>
                   </div>
                 </div>
-                <!--
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="contact-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <img src="assets/images/location.png" alt="Image">
-                              </div>
-                              <div class="content">
-                                 <h4>Our Location</h4>
-                                 <p>
-                                    <a href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17"
-                                       target="_blank">
-                                       85 Ketch Harbour
-                                       RoadBensalem, PA 19020
-                                    </a>
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                           <div class="contact-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <img src="assets/images/time.png" alt="Image">
-                              </div>
-                              <div class="content">
-                                 <h4>Office Hour</h4>
-                                 <p>
-                                    Sun - Thu
-                                    09 am - 06pm
-                                 </p>
-                                 <p>
-                                    Fri - Sat
-                                    4 pm - 10pm
-                                 </p>
-                              </div>
-                           </div>
-                        </div>-->
               </div>
             </div>
           </section>
