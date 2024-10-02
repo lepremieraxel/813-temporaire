@@ -21,9 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Envoyer l'email
     if (mail($to, $subject, $email_message, $headers)) {
-        echo "Message envoyé avec succès.";
+        header('Location:contact.php?s=success#form');
     } else {
-        echo "Une erreur est survenue, veuillez réessayer.";
+        header('Location:contact.php?s=error#form');
     }
 }
-?>
