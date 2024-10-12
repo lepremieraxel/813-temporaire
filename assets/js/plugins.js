@@ -745,7 +745,7 @@
 					pin: true,
 					invalidateOnRefresh: true,
 					start: "top top",
-					scrub: 1,
+					scrub: 0.5,
 					end: () => "+=" + $(".project-sl").innerWidth(),
 				},
 			});
