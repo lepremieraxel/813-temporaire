@@ -741,11 +741,11 @@
 				ease: "none",
 				scrollTrigger: {
 					trigger: ".project-sl",
+					// markers: true,
 					pin: true,
 					invalidateOnRefresh: true,
-					start: "center center",
+					start: "top top",
 					scrub: 1,
-					snap: 1 / (sections.length - 1),
 					end: () => "+=" + $(".project-sl").innerWidth(),
 				},
 			});
